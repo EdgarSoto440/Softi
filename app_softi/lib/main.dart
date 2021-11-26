@@ -26,15 +26,18 @@ class _InicioState extends State<Inicio> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Mi App"),
+          title: Text("Inicio de sesion", textAlign: TextAlign.center),
         ),
-        body: ListView(
+        body: Column(
           children: [
             Container(
-              padding: EdgeInsets.all(20.0),
-              child: Image.network(
-                  "https://i.pinimg.com/564x/a2/ce/cf/a2cecf19bd463d7d63cb15897485c525.jpg"),
-            )
+                width: MediaQuery.of(context).size.width * 0.5,
+                height: 20.0,
+                child: Text("Inicio de sesion", textAlign: TextAlign.center)),
+            Container(
+                width: MediaQuery.of(context).size.width * 0.5,
+                height: 20.0,
+                child: Text("Inicio de sesion", textAlign: TextAlign.center))
           ],
         ));
   }
